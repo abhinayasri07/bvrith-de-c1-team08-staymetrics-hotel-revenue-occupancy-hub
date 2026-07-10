@@ -1,4 +1,4 @@
-# [PROJECT TITLE]
+# [StayMetrics: Hotel Revenue & Occupancy Hub]
 
 > **Student note:** Start with `00_START_HERE.md` and `00_TEMPLATE_INDEX.md`. The placeholder files inside this repo are the templates.
 
