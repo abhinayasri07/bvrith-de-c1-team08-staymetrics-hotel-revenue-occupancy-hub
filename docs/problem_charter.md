@@ -1,31 +1,26 @@
 # Problem Charter
 
 **Week:** 1  
-**Owner(s):** [Student names]  
-**Project:** [Project title]
+**Owner(s):** Abhinayasri Bairi, Manusree Eerla, Patlolla Akshara Sai Reddy  
+**Project:** StayMetrics: Hotel Revenue & Occupancy Hub
 
 ---
 
 ## 1. Problem Context
 
-Explain the domain in simple language.
+StayMetrics represents the operations of a fictional hotel group that manages hotel bookings, room availability, guest information, and revenue. Every booking generates data such as booking details, room type, guest profile, cancellation status, check-in and check-out dates, and payment information.
 
-Prompts:
+Since this data comes from multiple sources, it may contain duplicate records, missing values, invalid room references, and inconsistent booking information. Raw data alone cannot provide reliable business insights. Therefore, it must be cleaned, validated, and transformed before it can be used for analysis.
 
-- What real-world process or operation does this project represent?
-- What kinds of data are generated?
-- Why is raw data not enough?
-- Who would use the final dashboard or metrics?
+The final dashboards and business metrics will help Revenue Managers, Hotel Operations Managers, Front Office Managers, and Commercial Analysts monitor hotel occupancy, revenue, cancellations, and booking trends for better decision-making.
 
 ---
 
 ## 2. Engineering Problem
 
-Write the data engineering problem clearly.
+The project converts multiple raw hotel booking source files into trusted Bronze, Silver, Data Quality, Gold, and dashboard-ready outputs using Databricks and Power BI.
 
-Example format:
-
-> The project must convert multiple raw source files into trusted Bronze, Silver, Data Quality, Gold, and dashboard-ready outputs using Databricks and Power BI.
+The pipeline ensures that inconsistent and low-quality data is identified, validated, standardized, and transformed into reliable business metrics for hotel revenue and occupancy analysis.
 
 ---
 
@@ -33,45 +28,50 @@ Example format:
 
 | User / Stakeholder | What they need from the data |
 |---|---|
-| [Example: Operations Head] | [Example: View daily demand and service issues] |
-| [Example: Analyst] | [Example: Compare trends and investigate failures] |
+| Revenue Manager | Monitor hotel revenue, ADR, RevPAR, and room performance |
+| Hotel Operations Manager | Track occupancy, room availability, and operational efficiency |
+| Front Office Manager | Monitor daily check-ins, check-outs, and cancellations |
+| Commercial Analyst | Analyze booking trends, customer segments, and cancellation patterns |
+| Business Management | Make strategic decisions using trusted business metrics |
 
 ---
 
 ## 4. Scope Inclusions
 
-List what the team will build.
+The project includes:
 
-- Raw source files
-- Bronze ingestion
-- Silver standardization
-- Data quality checks
-- Gold metrics
-- Power BI dashboard
-- Streaming simulation
-- GitHub evidence
+- Synthetic hotel booking data generation
+- Bronze data ingestion
+- Silver data standardization
+- Data quality validation
+- Gold business metrics
+- Power BI dashboard development
+- Streaming booking event simulation
+- GitHub documentation and weekly evidence
 
 ---
 
 ## 5. Scope Exclusions
 
-List what the team will not build.
+The project will not include:
 
-Examples:
-
-- No production application
-- No real customer data
-- No payment gateway integration
-- No copied internet project submission
-- No fake screenshots or unexplained AI-generated work
+- Production hotel booking application
+- Real hotel or customer data
+- Payment gateway integration
+- Online booking website development
+- Copied internet project submissions
+- Fake screenshots or unexplained AI-generated work
+- Direct Power BI connection to raw datasets
 
 ---
 
 ## 6. Success Criteria
 
-By the end of 12 weeks, the project is successful if:
+By the end of the 12-week internship, the project will be considered successful if:
 
-- The pipeline can be explained end to end.
-- The team can show Bronze, Silver, DQ, Gold, dashboard, and streaming evidence.
-- All three students can explain the full project at a high level.
-- GitHub contains weekly evidence and final submission files.
+- The complete data engineering pipeline can be explained from source data to dashboard.
+- Bronze, Silver, Data Quality, Gold, Power BI, and Streaming layers are successfully implemented.
+- Gold tables provide trusted business metrics for hotel revenue and occupancy.
+- Power BI dashboards are built only from Gold outputs.
+- GitHub contains complete weekly evidence, documentation, screenshots, and final submission files.
+- Every team member can confidently explain the project workflow and implementation.
