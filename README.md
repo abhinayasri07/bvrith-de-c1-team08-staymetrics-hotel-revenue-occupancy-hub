@@ -1,98 +1,110 @@
-# [StayMetrics: Hotel Revenue & Occupancy Hub]
+# StayMetrics: Hotel Revenue & Occupancy Hub
 
-> **Student note:** Start with `00_START_HERE.md` and `00_TEMPLATE_INDEX.md`. The placeholder files inside this repo are the templates.
+> Student note: Start with `00_START_HERE.md` and `00_TEMPLATE_INDEX.md`. The placeholder files inside this repository are templates.
 
+**Program:** ZENAIZ × BVRIT Hyderabad Data Engineering Internship Program
 
-**Program:** ZENAIZ x BVRIT Hyderabad Data Engineering Internship Program  
-**Track:** Data Engineering  
-**Duration:** 12 Weeks  
-**Team:** [08/ ]  
-**Students:** [Abhinayasri Bairi], [Manusree Eerla], [Patlolla Akshara Sai Reddy]  
+**Track:** Data Engineering
+
+**Duration:** 12 Weeks
+
+**Team:** [08]
+
+**Students:** [Abhinayasri Bairi], [Manusree Eerla], [Patlolla Akshara Sai Reddy]
+
 **AI Teammate:** Used responsibly for explanation, debugging, review, and documentation support.
 
 ---
 
-## 1. Project Summary
+# 1. Project Summary
 
-Write 5–8 lines explaining the assigned project.
+**Domain**
+Hospitality — Fictional Hotel Group
 
-Example structure:
+**Core Engineering Problem**
 
-- **Domain:** [Urban Mobility / IPL Matchday / Weather / etc.]
-- **Core engineering problem:** [What raw data needs to become trusted insight?]
-- **Main pipeline:** Raw Sources → Bronze → Silver → Data Quality → Gold → Power BI → Streaming Simulation
-- **Final outcome:** GitHub repo, Databricks notebooks, Gold outputs, Power BI dashboard, streaming simulation, final demo.
+Hotel booking information is collected from multiple sources such as bookings, guest details, room information, and rate plans. These datasets may contain duplicate records, missing values, invalid room references, inconsistent booking statuses, and incorrect room rates. The objective of this project is to build a reliable data engineering pipeline that cleans, validates, transforms, and integrates the data into trusted business insights.
+
+**Main Pipeline**
+
+Raw Sources
+→ Bronze
+→ Silver
+→ Data Quality
+→ Gold
+→ Power BI
+→ Streaming Simulation
+
+**Final Outcome**
+
+Develop a complete end-to-end data engineering solution that produces trusted hotel revenue and occupancy metrics using Databricks, Power BI, and GitHub with complete project documentation.
 
 ---
 
-## 2. Tools Used
+# 2. Tools Used
 
 | Tool | Purpose |
-|---|---|
-| Databricks Free Edition | Spark SQL notebooks, light Python/PySpark, Bronze/Silver/Gold tables, streaming simulation |
-| GitHub | Repository, weekly evidence, documentation, screenshots, commits |
-| Power BI Desktop | Dashboard from Gold outputs |
-| AI Assistant | Explanation, debugging, review, documentation support with manual verification |
+|------|---------|
+| Databricks Free Edition | Data Engineering |
+| GitHub | Version Control |
+| Power BI Desktop | Dashboard |
+| AI Assistant | Documentation & Debugging |
 
 ---
 
-## 3. Repository Navigation
+# 3. Repository Navigation
 
-| Folder / File | Purpose |
-|---|---|
-| `docs/` | Project documentation, data dictionary, DQ summary, Gold metric definitions |
-| `src/` | Data generation and reusable quality helper scripts |
-| `notebooks/` | Databricks notebooks for exploration, Bronze, Silver, DQ, Gold, export, streaming |
-| `data_sample/` | Small sample raw/streaming data only; do not store large files |
-| `dashboard/` | Power BI `.pbix` file and dashboard notes |
-| `streaming/` | Streaming design, JSON event schema, Kafka-style design awareness |
-| `screenshots/` | Weekly evidence screenshots |
-| `weekly_logs/` | Weekly execution logs and AI transparency notes |
-| `final_submission/` | Final report, demo script, team contribution, checklist |
-
----
-
-## 4. 12-Week Execution Map
-
-| Week | Focus | Main Evidence |
-|---:|---|---|
-| 1 | Project framing + GitHub | README, problem charter, Week 1 log |
-| 2 | Dataset design | Data dictionary, assumptions, sample data plan |
-| 3 | Databricks exploration | Exploration notebook, schema/count screenshots |
-| 4 | Bronze ingestion | Bronze notebook, raw-to-Bronze reconciliation |
-| 5 | Silver standardization | Silver notebook, canonical mapping evidence |
-| 6 | Data quality | DQ rules, DQ notebook, DQ summary |
-| 7 | Gold metrics | Gold tables and metric definitions |
-| 8 | Power BI draft | Gold export and first dashboard draft |
-| 9 | Dashboard refinement | Final dashboard screenshots and insights |
-| 10 | Streaming simulation | Auto Loader / Structured Streaming notebook and live metric |
-| 11 | Integration | Pipeline walkthrough, cleaned README, final evidence |
-| 12 | Final demo | Final report, demo script, contribution note |
+| Folder | Purpose |
+|------|---------|
+| docs | Documentation |
+| src | Source Code |
+| notebooks | Databricks notebooks |
+| data_sample | Sample data |
+| dashboard | Power BI |
+| streaming | Streaming files |
+| screenshots | Weekly screenshots |
+| weekly_logs | Weekly logs |
+| final_submission | Final project |
 
 ---
 
-## 5. Important Rules
+# 4. 12 Week Execution Map
 
-- Do not connect Power BI directly to raw CSV files. Power BI must use Gold outputs.
-- Do not submit copied internet GitHub repositories as your own project.
-- External references must be listed in `docs/references.md`.
-- AI-generated code or content must be verified and explainable.
-- Every week must have a GitHub commit and weekly log.
-- Keep sample data small in GitHub. Large generated data should be recreated using scripts or uploaded to Databricks separately.
+| Week | Focus |
+|------|------|
+| Week 1 | Project Setup |
+| Week 2 | Dataset Design |
+| Week 3 | Databricks Exploration |
+| Week 4 | Bronze Layer |
+| Week 5 | Silver Layer |
+| Week 6 | Data Quality |
+| Week 7 | Gold Metrics |
+| Week 8 | Power BI |
+| Week 9 | Dashboard Refinement |
+| Week 10 | Streaming |
+| Week 11 | Integration |
+| Week 12 | Final Demo |
 
 ---
 
-## 6. Final Project Proof
+# 5. Important Rules
 
-By Week 12, this repository should prove:
+- Use Gold tables in Power BI.
+- Maintain weekly GitHub commits.
+- Verify AI-generated content.
+- Keep datasets small in GitHub.
+- Document weekly progress.
 
-- We designed source datasets.
-- We processed batch data in Databricks.
-- We created Bronze tables.
-- We standardized Silver tables.
-- We implemented data quality checks.
-- We created Gold metric tables.
-- We built Power BI dashboards from Gold outputs.
-- We simulated streaming JSON events.
-- We documented weekly evidence in GitHub.
-- We can explain and defend the full project.
+---
+
+# 6. Final Project Proof
+
+- Source dataset generation
+- Bronze layer
+- Silver layer
+- Data Quality
+- Gold metrics
+- Power BI Dashboard
+- Streaming simulation
+- Weekly GitHub evidence
+- End-to-end pipeline
