@@ -16,7 +16,6 @@ The goal of Week 1 was to understand the project requirements, create the GitHub
 ## 2. Work Completed
 
 | Task | Owner | Status | Evidence |
-|---|---|---|---|10
 | Created Team GitHub repository | Abhinayasri Bairi | Done | GitHub Repository |
 | Updated README.md | Manusree Eerla | Done | README.md |
 | Completed Problem Charter | Patlolla Akshara Sai Reddy | Done | docs/problem_charter.md |
