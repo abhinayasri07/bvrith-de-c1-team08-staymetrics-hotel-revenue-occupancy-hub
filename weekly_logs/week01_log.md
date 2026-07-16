@@ -54,10 +54,10 @@ The goal of Week 1 was to understand the project requirements, create the GitHub
 
 | Question | Response |
 |---|---|
-| Where AI helped | AI assisted in understanding the project requirements, improving documentation, and reviewing Markdown formatting. |
-| What we changed after AI suggestion | We modified the generated content to match our project requirements and repository template. |
-| What we verified manually | The project information, documentation, repository structure, and internship guidelines were verified by the team. |
-| What we can explain without AI | We can explain the project objective, repository structure, data engineering pipeline, and Week 1 documentation independently. |
+| Where AI helped | AI was used to understand the project brief, improve the README, prepare the Problem Charter, and format the Week 1 documentation. |
+| What we changed after AI suggestion | The generated content was edited to match the StayMetrics project requirements, internship template, and team details before committing. |
+| What we verified manually | We manually verified the project objectives, stakeholder information, repository structure, project scope, and documentation against the official ZENAIZ project brief. |
+| What we can explain without AI | We can independently explain the project objective, repository structure, Bronze-Silver-Gold architecture, data quality process, dashboard workflow, and Week 1 documentation. |
 
 ---
 
