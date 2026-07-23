@@ -3,7 +3,7 @@
 **Week:** 2  
 **Date range:** [Add dates]  
 **Team:** [Team name / number]  
-**Project:** [Project title]
+**Project:** [Hotel Revenue]
 
 ---
 
