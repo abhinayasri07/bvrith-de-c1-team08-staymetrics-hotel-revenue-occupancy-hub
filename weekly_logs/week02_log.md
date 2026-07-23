@@ -1,9 +1,12 @@
-# Week 02 Log — [Sprint Name]
+# Week 02 Log — Data Validation and Quality Checks
 
-**Week:** 2  
-**Date range:** [Add dates]  
-**Team:** [Team name / number]  
-**Project:** [Hotel Revenue]
+Week: 2
+
+Date range: 17 Jul 2026 – 23 Jul 2026
+
+Team: Team 08
+
+Project: Hotel Revenue Occupancy Hub
 
 ---
 
