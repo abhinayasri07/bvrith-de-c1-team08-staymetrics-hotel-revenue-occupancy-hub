@@ -9,8 +9,7 @@
 
 | Gold Table Name | Grain | Source Table(s) | Purpose |
 |---|---|---|---|
-| `gold_[metric_table_1]` | One row per [grain] | `silver_[table]` | [purpose] |
-| `gold_[metric_table_2]` | One row per [grain] | `silver_[table]` | [purpose] |
+| `gold_event_summary_by_date` | One row per `booking_date + booking_status` | `silver_standardized_events` | Provide dashboard-ready daily booking metrics by booking status |
 
 ---
 
@@ -18,8 +17,9 @@
 
 | KPI Name | Formula | Grain | Dashboard Page | Notes |
 |---|---|---|---|---|
-| `[KPI 1]` | `[formula]` | `[daily / weekly / category]` | `[page]` | `[notes]` |
-| `[KPI 2]` | `[formula]` | `[grain]` | `[page]` | `[notes]` |
+| `record_count` | `COUNT(*)` | `booking_date + booking_status` | W08 Dashboard | Number of records for each booking date and booking status |
+| `total_amount` | `SUM(nightly_rate)` | `booking_date + booking_status` | W08 Dashboard | Total nightly rate for each booking date and booking status |
+| `avg_amount` | `AVG(nightly_rate)` | `booking_date + booking_status` | W08 Dashboard | Average nightly rate for each booking date and booking status |
 
 ---
 
@@ -27,8 +27,11 @@
 
 Before using Gold tables in Power BI, verify:
 
-- Gold row counts are reasonable.
+- Gold table `gold_event_summary_by_date` was created successfully.
+- Gold output contains `booking_date`, `booking_status`, `record_count`, `total_amount`, and `avg_amount`.
+- Gold output contains 2,369 rows based on the current successful run.
 - No unexpected nulls exist in key dashboard fields.
 - KPI totals match manual spot checks.
 - Power BI connects to Gold outputs only.
 - Metric definitions are documented clearly.
+- Gold grain is `booking_date + booking_status`.
