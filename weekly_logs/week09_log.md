@@ -1,15 +1,20 @@
-# Week 09 Log — [Sprint Name]
+# Week 09 Log — Dashboard Refinement
 
-**Week:** 9  
-**Date range:** [Add dates]  
-**Team:** [Team name / number]  
-**Project:** [Project title]
+**Week:** 9
+
+**Date range:** [Add Week 9 dates]
+
+**Team:** Team 08
+
+**Project:** StayMetrics – Hotel Revenue & Occupancy Hub
 
 ---
 
 ## 1. Sprint Goal
 
-Write the goal for this week in 2–3 lines.
+Refine the Week 8 Power BI dashboard by adding interactive filters, insight notes, and improving the overall dashboard presentation.
+
+Ensure that the final dashboard clearly presents booking volume, revenue trends, average nightly rate, and booking-status distribution.
 
 ---
 
@@ -17,14 +22,20 @@ Write the goal for this week in 2–3 lines.
 
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
-| [Task] | [Student] | [Done / In progress] | [file / screenshot / notebook] |
+| Added booking date slicer | Abhinayasri | Done | `dashboard/StayMetrics_W08_PowerBI_Dashboard.pbix` |
+| Added booking status slicer | Abhinayasri | Done | `dashboard/StayMetrics_W08_PowerBI_Dashboard.pbix` |
+| Added Dashboard Insight section | Abhinayasri | Done | `dashboard/StayMetrics_W08_PowerBI_Dashboard.pbix` |
+| Reviewed and refined dashboard layout | Abhinayasri | Done | `dashboard/StayMetrics_W08_PowerBI_Dashboard.pbix` |
+| Saved the refined Power BI dashboard | Abhinayasri | Done | `dashboard/StayMetrics_W08_PowerBI_Dashboard.pbix` |
 
 ---
 
 ## 3. Key Decisions
 
-- [Decision 1]
-- [Decision 2]
+- Added a booking date slicer to filter dashboard results by date range.
+- Added a booking status slicer to filter results by booking status.
+- Added a Dashboard Insight section to summarize the main dashboard observations.
+- Continued using the Gold-layer output as the dashboard data source.
 
 ---
 
@@ -32,15 +43,15 @@ Write the goal for this week in 2–3 lines.
 
 | Blocker | Impact | Help Needed |
 |---|---|---|
-| [Blocker] | [Impact] | [Help needed] |
+| No major blockers encountered | None | None |
 
 ---
 
 ## 5. Evidence Added to GitHub
 
-- [File updated]
-- [Screenshot added]
-- [Notebook updated]
+- `dashboard/StayMetrics_W08_PowerBI_Dashboard.pbix`
+- Week 9 refined Power BI dashboard with date and status slicers
+- Dashboard Insight section
 
 ---
 
@@ -48,14 +59,14 @@ Write the goal for this week in 2–3 lines.
 
 | Question | Response |
 |---|---|
-| Where AI helped | [Explain] |
-| What we changed after AI suggestion | [Explain] |
-| What we verified manually | [Explain] |
-| What we can explain without AI | [Explain] |
+| Where AI helped | AI helped with Power BI dashboard refinement guidance and troubleshooting. |
+| What we changed after AI suggestion | We adapted the suggested dashboard refinements to the actual Gold data and project requirements. |
+| What we verified manually | We manually checked the slicers, dashboard visuals, insight text, filtering, and final PBIX file. |
+| What we can explain without AI | We can explain the Gold data source, KPI calculations, dashboard visuals, slicers, and dashboard insights. |
 
 ---
 
 ## 7. Next Week Preparation
 
-- [Action]
-- [Action]
+- Review all completed Week 7–9 deliverables.
+- Verify that the required project files and weekly logs are committed to GitHub.
