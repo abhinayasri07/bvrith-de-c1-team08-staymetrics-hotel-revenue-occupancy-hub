@@ -32,9 +32,12 @@ Build the Bronze ingestion layer by reading all approved batch source files from
 
 ## 3. Key Decisions
 
-- Used separate Bronze Delta tables for each approved batch source file.
-- Used overwrite mode to support safe rerun behavior without creating duplicate records.
-
+- Created one Bronze Delta table for each approved batch source file.
+- Preserved the original source business values without applying business-level cleaning, filtering, aggregation, or deduplication in the Bronze layer.
+- Added technical ingestion metadata to support traceability and lineage.
+- Used overwrite mode for controlled reruns of the Bronze ingestion process.
+- Verified that the controlled rerun did not introduce unintended duplicate records.
+- Replaced the unsupported `input_file_name()` approach with a Unity Catalog-compatible method for source/file metadata.
 ---
 
 ## 4. Blockers / Risks
@@ -47,11 +50,13 @@ Build the Bronze ingestion layer by reading all approved batch source files from
 
 ## 5. Evidence Added to GitHub
 
+## 5. Evidence Added to GitHub
+
 - Updated `notebooks/02_bronze_ingestion.ipynb`
-- Added Week 4 execution screenshots in `evidence/week_04/`
-- Updated `weekly/week_04_log.md`
-- Added reconciliation output screenshots
-- Added Delta history screenshot
+- Added Week 4 execution screenshots in the repository evidence folder
+- Updated `weekly_logs/week04_log.md`
+- Added source-to-Bronze reconciliation evidence
+- Added Delta history evidence for rerun verification
 
 ---
 
@@ -67,5 +72,9 @@ Build the Bronze ingestion layer by reading all approved batch source files from
 
 ## 7. Next Week Preparation
 
-- [Action]
-- [Action]
+## 7. Next Week Preparation
+
+- Begin Bronze-to-Silver transformations for the approved StayMetrics source tables.
+- Define the required data types and standardization rules for the Silver Candidate tables.
+- Validate that Silver transformations preserve the expected physical row counts.
+- Prepare transformation validation and execution evidence for Week 5.
