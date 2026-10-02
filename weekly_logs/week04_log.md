@@ -70,7 +70,6 @@ Build the Bronze ingestion layer by reading all approved batch source files from
 | What we can explain without AI | We can explain the Bronze ingestion workflow, Delta table creation, ingestion metadata, reconciliation process, rerun validation, and the purpose of each notebook section. |
 ---
 
-## 7. Next Week Preparation
 
 ## 7. Next Week Preparation
 
